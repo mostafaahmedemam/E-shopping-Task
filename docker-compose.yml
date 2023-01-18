@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  e-shopping-app:
+    image: ${DOCKER_REGISTRY-}eshoppingapp
+    build:
+      context: .
+      dockerfile: Dockerfile
+  catalogdb:
+    image: mongo
+
+volumes:
+  mongo_data:

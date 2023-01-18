@@ -1,0 +1,42 @@
+name: dockercompose1572034632200544835
+services:
+  catalogdb:
+    container_name: catalogdb
+    image: mongo
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 27017
+      published: "27017"
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: volume
+      source: mongo_data
+      target: /data/db
+      volume: {}
+  e-shopping-app:
+    build:
+      context: D:\E-Shopping-App
+      dockerfile: Dockerfile
+    depends_on:
+      catalogdb:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DatabaseSettings:ConnectionString: mongodb://catalogdb:27017
+    image: eshoppingapp
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "8000"
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose1572034632200544835_default
+volumes:
+  mongo_data:
+    name: dockercompose1572034632200544835_mongo_data

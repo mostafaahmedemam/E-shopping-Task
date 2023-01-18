@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1a51946a-db1b-4316-ad5e-74f874d93b6e": {
+      "ProjectGuid": "1a51946a-db1b-4316-ad5e-74f874d93b6e",
+      "DisplayName": "E-Shopping-App",
+      "ColorIndex": 0
+    },
+    "2d151a80-92d5-4465-ad28-aaf783f8ebaf": {
+      "ProjectGuid": "2d151a80-92d5-4465-ad28-aaf783f8ebaf",
+      "DisplayName": "docker-compose",
+      "ColorIndex": 1
+    },
+    "5b4c2ae4-8421-4a20-8139-1c0ff071012b": {
+      "ProjectGuid": "5b4c2ae4-8421-4a20-8139-1c0ff071012b",
+      "DisplayName": "docker-compose",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "2446761e-1b63-45ac-8c6b-7301a90f3af7": {
+      "ProjectGuid": "2446761e-1b63-45ac-8c6b-7301a90f3af7",
+      "DisplayName": "docker-compose",
+      "ColorIndex": 3
+    },
+    "de42b599-f869-4d83-921f-8a2346e508d3": {
+      "ProjectGuid": "de42b599-f869-4d83-921f-8a2346e508d3",
+      "DisplayName": "docker-compose",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}
